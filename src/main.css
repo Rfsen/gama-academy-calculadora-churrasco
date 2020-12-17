@@ -1,0 +1,205 @@
+body{
+    background-color: #731AB7;
+    color: white;
+    font-family: Lato;
+    
+}
+
+.container{
+    background: #5E1593
+}
+
+img{
+    width: 50%;
+}
+
+h3{
+    font-size: 26px;
+    padding-top: 89px;
+    
+}
+
+h1 {
+    font-family: Lobster;
+    text-align: center;
+    font: normal normal normal 86px/110px ;
+    letter-spacing: 0px;
+    color: #F7F0F0;
+    text-shadow: 0px 3px 6px #636363;
+    opacity: 1;
+    font-size: 86px;
+    padding-bottom: 15px;
+} 
+
+h2 { 
+    font-family: Lobster; 
+    text-align: left;
+    font: normal normal normal 40px/51px ;
+    letter-spacing: 0px;
+    color: #F7F0F0;
+    text-shadow: 0px 3px 6px #636363;
+    opacity: 1; 
+    font-size: 40px;
+} 
+header{
+    text-align: center;
+}
+
+#botaoCalcular{
+    width: 314px;
+    height: 77px;
+    color: transparent;
+    background: #63DC3E 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #F8F0F029;
+    border-radius: 5px;
+    opacity: 1;
+    font: normal normal bold 30px Lato;
+    letter-spacing: 0px;
+    color: #731AB7;
+    opacity: 1;
+}
+
+.button{
+display: flexbox;
+
+}
+
+#resultado{
+    background-color: #A379C1;
+    border-radius: 5px;
+    top: 873px;
+    left: 461px;
+    width: 100%;
+    height: 175px;
+    font: normal normal normal 28px/34px Lato;
+    color: white;
+    padding-left: 47px;
+    padding-top: 20px;
+}
+
+#legenda{
+    font-family: Lato;
+    font-weight: normal;
+    font-size: 15px/18px;
+}
+
+p{
+    text-align: center;
+    width: 180px;
+}
+
+label{
+    text-align: center;
+}
+
+input[type=text]{
+    background-color: #731AB7;
+    border: 5px solid #f7f7f7;
+    text-align: center;
+    font-weight: bold;
+    font-size: 31px;;
+    width: 170px;
+    height: 71px;
+    color: white;
+    -webkit-text-fill-color: white;
+    
+}
+
+input[type=text]:focus{
+    color:transparent;
+}
+
+#acompanhamentos{
+    padding-left: 27%;
+    padding-bottom: 5%;
+}
+input[type=checkbox]{
+    background-color: #731AB7;
+    border: 5px solid #f7f7f7;
+    margin-right: 2%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    img{
+        width: 70%;
+    }
+    
+    h3{
+        font-size: 26px;
+        padding-top: 89px;
+        
+    }
+    
+    h1 {
+        font-family: Lobster;
+        text-align: center;
+        font: normal normal normal 86px/110px ;
+        letter-spacing: 0px;
+        color: #F7F0F0;
+        text-shadow: 0px 3px 6px #636363;
+        opacity: 1;
+        font-size: 300%;
+    } 
+    
+    h2 { 
+        font-family: Lobster; 
+        text-align: center;
+        font: normal normal normal 40px/51px ;
+        letter-spacing: 0px;
+        color: #F7F0F0;
+        text-shadow: 0px 3px 6px #636363;
+        opacity: 1; 
+        font-size: 200%;
+    } 
+       
+    #comidas{
+        justify-content: center;
+    }
+    
+    .col-sm-3{
+        justify-content: center;
+        display: grid;
+    }
+
+    #acompanhamentos{
+        justify-content: center;
+        padding-bottom: 5%;
+    }
+    
+
+    #legenda{
+        font-family: Lato;
+        font-weight: normal;
+        font-size: 15px/18px;
+    }       
+    #resultado{
+        background-color: #A379C1;
+        border-radius: 5px;
+        top: 873px;
+        left: 461px;
+        width: 100%;
+        height: 100%;
+        font: normal normal normal 25px Lato;
+        color: white;
+        padding-left: 47px;
+        padding-top: 20px;
+    }
+    
+    #legenda{
+        font-family: Lato;
+        font-weight: normal;
+        font-size: 15px/18px;
+    }
+    
+    p{
+        text-align: center;
+        width: 180px;
+    }
+    
+    label{
+        text-align: center;
+    }
+
+
+}

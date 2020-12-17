@@ -29,11 +29,11 @@ const calcularChurrasco = () => {
 
     
 
-    document.getElementById("total-carne").innerHTML = `${getValueMeasure(totalCarne, 1)}`
-    document.getElementById("total-pessoas").innerHTML = `${totalPessoas} pessoas`
-    document.getElementById("total-acompanhamento").innerHTML = `${getValueMeasure(totalAcompanhamento, 1)}`
-    document.getElementById("total-bebidas-nao-alcoolicas").innerHTML = `${getValueMeasure(totalBebidasNaoAlcoolicas, 2)}`
-    document.getElementById("total-bebidas-alcoolicas").innerHTML = `${getValueMeasure(totalBebidasAlcoolicas, 2)}`
+    document.getElementById("total-carne").innerHTML = `Total de Carne: ${getValueMeasure(totalCarne, 1)}`
+    document.getElementById("total-pessoas").innerHTML = `Total de Pessoas: ${totalPessoas} pessoas`
+    document.getElementById("total-acompanhamento").innerHTML = `Acompanhamentos: ${getValueMeasure(totalAcompanhamento, 1)}`
+    document.getElementById("total-bebidas-nao-alcoolicas").innerHTML = `Bebidas não alcoólicas: ${getValueMeasure(totalBebidasNaoAlcoolicas, 2)}`
+    document.getElementById("total-bebidas-alcoolicas").innerHTML = `Bebidas alcoólicas: ${getValueMeasure(totalBebidasAlcoolicas, 2)}`
 
 }
 
@@ -46,14 +46,15 @@ type 2: bebidas
 function getValueMeasure(val, type) {
     switch(type) {
         case 1: {
-            return val >= 1000 ? `${val/1000}kg` : `${val}g`
+            return val >= 1000 ? `${val/1000} kg` : `${val} g`
             break;
         }
         case 2: {
-            return val >= 1000 ? `${val/1000}L` : `${val}ml`
+            return val >= 1000 ? `${val/1000} L` : `${val} ml`
             break;
         }
     }
 }
 
-botao.addEventListener("click", calcularChurrasco)
+botao.addEventListener("click", calcularChurrasco);
+botao.removeaddEventListener("click",calcularChurrasco);
